@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Aoi",
+  "short_name": "Aoi",
+  "version": "0.1.0",
+  "description": "Turns the web white and bluescale: recipes for GitHub, YouTube and Gmail, plus a bluescale mode for any site.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Aoi",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_start",
+      "js": [
+        "src/shared/palette.js",
+        "src/shared/color.js",
+        "src/shared/settings.js",
+        "src/recipes/github.js",
+        "src/recipes/youtube.js",
+        "src/recipes/gmail.js",
+        "src/content/engine.js",
+        "src/content/live.js",
+        "src/content/images.js",
+        "src/content/main.js"
+      ]
+    }
+  ],
+  "commands": {
+    "cycle-mode": {
+      "suggested_key": { "default": "Alt+Shift+A" },
+      "description": "Cycle this site's mode: off, recipes, bluescale, + images"
+    }
+  }
+}

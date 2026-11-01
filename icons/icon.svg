@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="disc"><circle cx="64" cy="64" r="58"/></clipPath>
+  </defs>
+  <g clip-path="url(#disc)" transform="rotate(-18 64 64)">
+    <rect x="-20" y="-20" width="168" height="54" fill="#dbf5ff"/>
+    <rect x="-20" y="34" width="168" height="30" fill="#98c4fe"/>
+    <rect x="-20" y="64" width="168" height="30" fill="#4c7ad3"/>
+    <rect x="-20" y="94" width="168" height="54" fill="#29438c"/>
+  </g>
+  <circle cx="64" cy="64" r="57" fill="none" stroke="#29438c" stroke-opacity="0.22" stroke-width="2"/>
+</svg>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aoi</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img src="../../icons/icon-32.png" alt="" width="22" height="22" />
+        <span class="word">aoi</span>
+        <span class="kanji" aria-hidden="true">青</span>
+      </div>
+      <label class="switch" title="Turn Aoi on or off everywhere">
+        <input type="checkbox" id="enabled" aria-label="Aoi on everywhere" />
+        <span class="track"></span>
+      </label>
+    </header>
+
+    <section class="site">
+      <div class="site-head">
+        <div>
+          <div class="eyebrow">This site</div>
+          <div class="host" id="host">…</div>
+        </div>
+        <span class="chip" id="recipe" hidden></span>
+      </div>
+      <p class="notice" id="notice" hidden></p>
+      <div class="modes" id="modes" role="radiogroup" aria-label="Mode for this site"></div>
+      <button class="link" id="useDefault" hidden>Follow the default instead</button>
+    </section>
+
+    <section class="options">
+      <div class="row strength">
+        <span class="text">
+          <b>Colour strength</b>
+          <small id="strengthHint">How blue the blues are</small>
+        </span>
+        <input type="range" id="strength" min="0" max="100" step="5" aria-label="Colour strength" />
+      </div>
+      <label class="row">
+        <span class="text">
+          <b>Keep red for errors</b>
+          <small>Strong reds stay red, so warnings still stand out</small>
+        </span>
+        <span class="switch">
+          <input type="checkbox" id="keepReds" />
+          <span class="track"></span>
+        </span>
+      </label>
+      <label class="row">
+        <span class="text">
+          <b>Default for other sites</b>
+          <small>Used wherever you haven't picked a mode</small>
+        </span>
+        <select id="defaultMode"></select>
+      </label>
+    </section>
+
+    <footer>
+      <div class="palette" id="palette"></div>
+      <div class="hint" id="hint"><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> cycles modes on any page</div>
+    </footer>
+
+    <script src="../shared/palette.js"></script>
+    <script src="../shared/color.js"></script>
+    <script src="../shared/settings.js"></script>
+    <script src="../recipes/github.js"></script>
+    <script src="../recipes/youtube.js"></script>
+    <script src="../recipes/gmail.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

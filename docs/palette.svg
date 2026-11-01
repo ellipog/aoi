@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <style>
+    .name { font-size: 14px; font-weight: 600; fill: #1f2f5c; }
+    .hex { font-size: 12px; fill: #5a6b90; font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace; }
+  </style>
+  <g>
+    <rect x="0" y="0" width="98" height="98" rx="18" fill="#fdfdfd" stroke="#e2ebf8" stroke-width="2"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Paper</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#fdfdfd</text>
+  </g>
+  <g transform="translate(111 0)">
+    <rect width="98" height="98" rx="18" fill="#dbf5ff"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Ice</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#dbf5ff</text>
+  </g>
+  <g transform="translate(222 0)">
+    <rect width="98" height="98" rx="18" fill="#c1e0ff"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Frost</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#c1e0ff</text>
+  </g>
+  <g transform="translate(333 0)">
+    <rect width="98" height="98" rx="18" fill="#98c4fe"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Sky</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#98c4fe</text>
+  </g>
+  <g transform="translate(444 0)">
+    <rect width="98" height="98" rx="18" fill="#709eec"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Cornflower</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#709eec</text>
+  </g>
+  <g transform="translate(555 0)">
+    <rect width="98" height="98" rx="18" fill="#4c7ad3"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Blue</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#4c7ad3</text>
+  </g>
+  <g transform="translate(666 0)">
+    <rect width="98" height="98" rx="18" fill="#375eb5"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Cobalt</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#375eb5</text>
+  </g>
+  <g transform="translate(777 0)">
+    <rect width="98" height="98" rx="18" fill="#29438c"/>
+    <text class="name" x="49" y="124" text-anchor="middle">Ink</text>
+    <text class="hex" x="49" y="143" text-anchor="middle">#29438c</text>
+  </g>
+</svg>
